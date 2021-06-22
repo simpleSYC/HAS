@@ -1,6 +1,6 @@
 let CLIENTOS = {
-  "https://testo333.ddns.net/": "GOGO33",
-  "https://testo987.ddns.net/": "DODO",
+  "https://testo333.ddns.net": "GOGO33",
+  "https://testo987.ddns.net": "DODO",
 };
 /// samo moje takvo hsotnato ke ima tuka... so url i web
 
@@ -8,7 +8,7 @@ function Koj_WEB_TI_E(URL) {
   let HAS = undefined;
   let presek_end = 5;
   let presek_start = 8;
-  let dodatok = ".ddns.net/"; ///".ddns.net/"
+  let dodatok = ".ddns.net"; ///".ddns.net/"
   for (i in URL) {
     
     
@@ -27,7 +27,7 @@ function Koj_WEB_TI_E(URL) {
 
   return HAS;
 }
-CLIENTOS = CLIENTOS[Koj_WEB_TI_E(window.parent.location.href)];
+CLIENTOS = CLIENTOS[Koj_WEB_TI_E(document.domain)];
 WELCOME_CLIENT(CLIENTOS);
 function WELCOME_CLIENT(C) {
   let welcome_TITLE = document.getElementById("TiTle");
