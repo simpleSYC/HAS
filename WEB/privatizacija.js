@@ -13,8 +13,6 @@ function Koj_WEB_TI_E(URL) {
     if (URL.slice(presek_start, presek_start + presek_end) === ".ddns") {
       //".com." -syc. //.ddns
       HAS = URL.slice(0, presek_start) + dodatok;
-
-      console.log(HAS);
       break;
     }
 
@@ -29,7 +27,7 @@ function WELCOME_CLIENT(C) {
   let welcome_TITLE = document.getElementById("TiTle");
   let welocme_FOTO = document.getElementById("WELCOM_FOTO");
   let welcom_TXT = document.getElementById("WELCOM_TXT");
-  let DefaltSRC = "https://simplesyc.github.io/HAS.SRC/MEDIA/HAS1000.png";
+  let DefaltSRC = "MEDIA/HAS1000.png";
   if (C != undefined) {
     SYC_0000.child("WEB/" + C)
       .once("value")
@@ -38,7 +36,7 @@ function WELCOME_CLIENT(C) {
         welcome_TITLE.innerHTML = DATA["TITLE"];
         welcom_TXT.innerHTML = DATA["TXT"];
       });
-    DefaltSRC = "https://simplesyc.github.io/HAS.SRC/WEB/MEDIA/" + C + "/WelcomFoto.png";
+    DefaltSRC = "WEB/MEDIA/" + C + "/WelcomFoto.png";
   }
   welocme_FOTO.src = DefaltSRC;
 }
