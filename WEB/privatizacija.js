@@ -28,7 +28,7 @@ function Koj_WEB_TI_E(URL) {
   return HAS;
 }
 
-    console.log("-----",window.frameElement);
+    console.log("-----",window.parent);
 
 
 
