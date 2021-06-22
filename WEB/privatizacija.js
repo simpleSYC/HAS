@@ -28,17 +28,14 @@ function Koj_WEB_TI_E(URL) {
   return HAS;
 }
 
-    console.log("-----",window.frameElement);
-
+var YRL;
 window.addEventListener("message", function(event){
-
-console.log('Here originot', event["origin"])
-
+YRL=event["origin"];
 }, false);
 
 
 
-CLIENTOS = CLIENTOS[Koj_WEB_TI_E(window.frameElement)];
+CLIENTOS = CLIENTOS[Koj_WEB_TI_E(YRL)];
 WELCOME_CLIENT(CLIENTOS);
 function WELCOME_CLIENT(C) {
   let welcome_TITLE = document.getElementById("TiTle");
