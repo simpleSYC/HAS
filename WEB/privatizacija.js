@@ -32,7 +32,7 @@ function Koj_WEB_TI_E(URL) {
 
 window.addEventListener("message", function(event){
 
-console.log('Here is the message received from the parent page, the message content is in the event. Data attribute ', event)
+console.log('Here originot', event["origin"])
 
 }, false);
 
