@@ -1,12 +1,6 @@
 let CLIENTOS = {
   "https://testo333.ddns.net/": "GOGO33",
   "https://testo987.ddns.net/": "DODO",
-
-  "file:///D:/!!!!!!!!!!!!!!!!%20TUKA%20SE%20NAJBITNITE%20SLIKI/V/SYC/HAS-SYC.system/index.html":
-    "DODO",
-
-  "file:///D:/!!!!!!!!!!!!!!!!%20TUKA%20SE%20NAJBITNITE%20SLIKI/V/SYC/ADMIN-SYC.system/index.html":
-    "aminaga",
 };
 /// samo moje takvo hsotnato ke ima tuka... so url i web
 
@@ -44,7 +38,7 @@ function WELCOME_CLIENT(C) {
         welcome_TITLE.innerHTML = DATA["TITLE"];
         welcom_TXT.innerHTML = DATA["TXT"];
       });
-    DefaltSRC = "../SRC.HAS-SYC.system/WEB/MEDIA/" + C + "/WelcomFoto.png";
+    DefaltSRC = "https://simplesyc.github.io/HAS.SRC/WEB/MEDIA/" + C + "/WelcomFoto.png";
   }
   welocme_FOTO.src = DefaltSRC;
 }
