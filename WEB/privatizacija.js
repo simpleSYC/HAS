@@ -31,12 +31,12 @@ function Koj_WEB_TI_E(URL) {
 var YRL;
 window.addEventListener("message", function(event){
 YRL=event["origin"];
-}, false);
-
-
 
 CLIENTOS = CLIENTOS[Koj_WEB_TI_E(YRL)];
 WELCOME_CLIENT(CLIENTOS);
+}, false);
+
+
 function WELCOME_CLIENT(C) {
   let welcome_TITLE = document.getElementById("TiTle");
   let welocme_FOTO = document.getElementById("WELCOM_FOTO");
