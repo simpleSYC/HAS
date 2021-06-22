@@ -10,6 +10,11 @@ function Koj_WEB_TI_E(URL) {
   let presek_start = 8;
   let dodatok = ".ddns.net/"; ///".ddns.net/"
   for (i in URL) {
+    
+    
+    console.log("HAS _ ",URL.slice(presek_start, presek_start + presek_end));
+    
+    
     if (URL.slice(presek_start, presek_start + presek_end) === ".ddns") {
       //".com." -syc. //.ddns
       HAS = URL.slice(0, presek_start) + dodatok;
