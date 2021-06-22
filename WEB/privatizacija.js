@@ -27,7 +27,7 @@ function Koj_WEB_TI_E(URL) {
 
   return HAS;
 }
-CLIENTOS = CLIENTOS[Koj_WEB_TI_E(document.title)];
+CLIENTOS = CLIENTOS[Koj_WEB_TI_E(document.getAttribute("url"))];
 WELCOME_CLIENT(CLIENTOS);
 function WELCOME_CLIENT(C) {
   let welcome_TITLE = document.getElementById("TiTle");
