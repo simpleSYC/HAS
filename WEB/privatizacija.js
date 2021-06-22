@@ -30,6 +30,11 @@ function Koj_WEB_TI_E(URL) {
 
     console.log("-----",window.frameElement);
 
+window.addEventListener("message", function(event){
+
+Console. Log ('Here is the message received from the parent page, the message content is in the event. Data attribute ', event)
+
+}, false);
 
 
 
