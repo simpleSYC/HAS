@@ -8,9 +8,9 @@ function Koj_WEB_TI_E(URL) {
   let HAS = undefined;
   let presek_end = 5;
   let presek_start = 8;
-  let dodatok = "-SYC.system/index.html"; ///".ddns.net/"
+  let dodatok = ".ddns.net/"; ///".ddns.net/"
   for (i in URL) {
-    if (URL.slice(presek_start, presek_start + presek_end) === "-SYC.") {
+    if (URL.slice(presek_start, presek_start + presek_end) === ".ddns") {
       //".com." -syc. //.ddns
       HAS = URL.slice(0, presek_start) + dodatok;
 
