@@ -13,7 +13,7 @@ const DATA = {
 };
 document.getElementsByTagName("TITLE")[0].innerHTML = Title;
 document.getElementById("TXT").innerHTML = TXT;
-document.getElementsByTagName("IMG")[0].src = LogoSRC;
+document.getElementsByTagName("IMG")[2].src = LogoSRC;
 document.getElementById("Link").innerHTML = WebUrl;
 
 let blanko = document.getElementById("Blanko").children[0];
