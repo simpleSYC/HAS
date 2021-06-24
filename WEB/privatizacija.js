@@ -25,7 +25,7 @@ var YRL;
 window.addEventListener("message", function(event){
 YRL=event["origin"];
 
-let CLIENTOS = CLIENTOS[Koj_WEB_TI_E(YRL)];
+CLIENTOS = CLIENTOS[Koj_WEB_TI_E(YRL)];
 WELCOME_CLIENT(CLIENTOS);
 }, false);
 
