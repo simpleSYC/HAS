@@ -10,18 +10,11 @@ function Koj_WEB_TI_E(URL) {
   let presek_start = 8;
   let dodatok = ".ddns.net"; ///".ddns.net/"
   for (i in URL) {
-    
-    
-    console.log("HAS _ ",URL.slice(presek_start, presek_start + presek_end));
-    
-    
     if (URL.slice(presek_start, presek_start + presek_end) === ".ddns") {
       //".com." -syc. //.ddns
       HAS = URL.slice(0, presek_start) + dodatok;
       break;
     }
-    console.log("HAS--",HAS);
-
     presek_start = presek_start + 1;
   }
 
@@ -32,13 +25,10 @@ var YRL;
 window.addEventListener("message", function(event){
 YRL=event["origin"];
 
-CLIENTOS = CLIENTOS[Koj_WEB_TI_E(YRL)];
+let CLIENTOS = CLIENTOS[Koj_WEB_TI_E(YRL)];
 WELCOME_CLIENT(CLIENTOS);
 }, false);
 
-
-CLIENTOS = CLIENTOS[Koj_WEB_TI_E(window.location.toString())];
-WELCOME_CLIENT(CLIENTOS);
 function WELCOME_CLIENT(C) {
   let URL_SRC = "https://simplesyc.github.io/HAS.SRC/";
   let welcome_TITLE = document.getElementById("TiTle");
