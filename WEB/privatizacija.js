@@ -41,7 +41,7 @@ function WELCOME_CLIENT(C) {
   let welcome_TITLE = document.getElementById("TiTle");
   let welocme_FOTO = document.getElementById("WELCOM_FOTO");
   let welcom_TXT = document.getElementById("WELCOM_TXT");
-  let DefaltSRC = "https://simplesyc.github.io/HAS.SRC/MEDIA/HAS1000.png";
+  let DefaltSRC = "MEDIA/HAS1000.png";
   if (C != undefined) {
     SYC_0000.child("WEB/" + C)
       .once("value")
@@ -50,7 +50,7 @@ function WELCOME_CLIENT(C) {
         welcome_TITLE.innerHTML = DATA["TITLE"];
         welcom_TXT.innerHTML = DATA["TXT"];
       });
-    DefaltSRC = "https://simplesyc.github.io/HAS.SRC/WEB/MEDIA/" + C + "/WelcomFoto.png";
+    DefaltSRC = "WEB/" + C + "/LoginFoto.png";
   }
   welocme_FOTO.src = DefaltSRC;
 }
