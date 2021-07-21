@@ -18,7 +18,7 @@ function w3_close() {
 }
 
 EL_["FAQ"].onclick = function () {
-  window.open("FAQ.html");
+  window.open("FAQ");
 };
 
 EL_["INTRO"].style.height = window.innerHeight + "px";
